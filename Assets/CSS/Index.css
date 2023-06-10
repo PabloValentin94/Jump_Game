@@ -1,0 +1,185 @@
+/* Estilizações: */
+
+* {
+
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#87CEEB, #E0F6FF);
+    background-size: 100% 118%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#initialize_game {
+
+    width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+}
+
+#initialize_game button {
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url("../Images/Iniciar.png");
+    background-size: 83% 83%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0px;
+
+}
+
+#game {
+
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: transparent;
+    border-bottom: 5px solid #008000;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#reload_game {
+
+    width: 50%;
+    height: 70%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+
+}
+
+#reload_game button {
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url("../Images/Reiniciar.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0px;
+
+}
+
+#clouds {
+
+    width: 40%;
+    position: absolute;
+    top: 50px;
+    animation: Animacao_Nuvens 15s infinite linear;
+
+}
+
+#mario {
+
+    width: 10%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+}
+
+#pipe {
+
+    width: 4%;
+    position: absolute;
+    bottom: 0px;
+    animation: Animacao_Cano 2.5s infinite linear;
+
+}
+
+.jump {
+
+    animation: Pulo 0.5s ease-out;
+
+}
+
+/* Animações: */
+
+@keyframes Animacao_Nuvens {
+
+    from {
+
+        right: -50%;
+
+    }
+
+    to {
+
+        right: 150%;
+
+    }
+}
+
+@keyframes Animacao_Cano {
+
+    from {
+
+        right: -5%;
+
+    }
+
+    to {
+
+        right: 105%;
+
+    }
+
+}
+
+@keyframes Pulo {
+
+    0% {
+
+        bottom: 0%;
+
+    }
+
+    40% {
+
+        bottom: 20%;
+
+    }
+
+    50% {
+
+        bottom: 20%;
+
+    }
+
+    60% {
+
+        bottom: 20%;
+
+    }
+
+    100% {
+
+        bottom: 0%;
+
+    }
+
+}
