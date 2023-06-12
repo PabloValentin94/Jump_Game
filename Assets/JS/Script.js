@@ -22,6 +22,10 @@ var derrota = false;
 
 function comecar()
 {
+    
+    // Eventos da Página:
+
+    document.addEventListener("keydown", pular);
 
     document.getElementById("initialize_game").style.display = "none";
 
@@ -133,7 +137,3 @@ function reiniciar()
     window.location.reload(true);
     
 }
-
-// Eventos da Página:
-
-document.addEventListener("keydown", pular);
